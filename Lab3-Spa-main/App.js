@@ -14,11 +14,11 @@ const Stack = createNativeStackNavigator();
 const initial = () => {
   const USERS = firestore().collection('USERS');
   const admin = {
-    name: 'admin',
+    name: 'Nguyen trong duong',
     phone: '01234567890',
     address: 'BD',
-    email: 'it.minhquangpham@gmail.com',
-    password: '123456',
+    email: 'trongduong@gmail.com',
+    password: '123123',
     role: 'admin',
   };
   USERS.doc(admin.email).onSnapshot(u => {
